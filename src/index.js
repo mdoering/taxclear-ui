@@ -15,6 +15,9 @@ const store = configureStore();
 // Create an enhanced history that syncs navigation events with the store
 const history = syncHistoryWithStore(browserHistory, store);
 
+// Now you can dispatch navigation actions from anywhere!
+// store.dispatch(push('/foo'))
+
 render(
   <Provider store={store}>
     <Router history={history} routes={routes} />

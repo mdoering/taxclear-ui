@@ -1,9 +1,9 @@
-import * as ActionTypes from '../routes/FuelSavings/actions/actionTypes';
+import * as ActionTypes from '../routes/fuelsavings/actions/actionTypes';
 
 import MockDate from 'mockdate';
 import { createStore } from 'redux';
 
-import calculator from '../routes/FuelSavings/utils/fuelSavingsCalculator';
+import calculator from '../routes/fuelsavings/utils/fuelSavingsCalculator';
 import {getFormattedDateTime} from '../utils/dateHelper';
 import initialState from './initialState';
 import rootReducer from './reducers';
